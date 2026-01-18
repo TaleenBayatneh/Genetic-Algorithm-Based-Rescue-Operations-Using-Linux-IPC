@@ -1,0 +1,42 @@
+# GA Rescue Robot Configuration
+# Robots make MULTIPLE TRIPS to rescue all survivors
+
+# Map Parameters
+map_width = 15
+map_height = 15
+map_depth = 2
+debris_density = 0.18
+num_survivors = 8
+num_robots = 3
+
+# GA Parameters
+local_population_size = 20
+local_max_generations = 12
+mutation_rate = 0.20
+crossover_rate = 0.70
+elitism_rate = 0.20
+replan_interval = 8
+
+# Fitness Weights
+weight_exploration = 5.0
+weight_survivor = 100.0
+weight_distance = 2.0
+weight_risk = 3.0
+weight_unknown = 8.0
+
+# Simulation Timing
+robot_speed = 4.0
+rescue_time = 1.0
+refill_time = 0.5
+max_simulation_time = 120.0
+
+# Sensor Parameters
+visual_range = 3
+heat_sensor_range = 5
+co2_sensor_range = 4
+
+# Risk
+debris_risk = 0.1
+unknown_risk = 1.0
+
+random_seed = 12345
